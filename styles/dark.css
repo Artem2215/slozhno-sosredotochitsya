@@ -5,8 +5,34 @@
 */
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-image: url('/images/cover-image-dark.png');
+
+  --mainFont: 'IBM Plex Mono';
+  --mainFontSize: 1.125rem;
+  --normalFont: normal;
+  --boldFont: bold;
+  --pageBackgrColor: #000028;
+
+  --btnTextColor: #ff0070;
+  --btnBorderColor: 1px solid #ff0070;
+
+  --titleTextColor: #db00ff;
+  --subtitleTextColor: #000028;
+  --subtitleBackgrColor: #ff0070;
+  --textColor: #f1b2ce;
+  --questionsTextColor: #ff0070;
+  --linkShadow: 1.5px 1.5px 0px #ff0070;
+  --linkBorderColor: 1px solid #f1b2ce;
+  --RECTextColor: #ff0070;
+  --ellipseColor: #ff0070;
+
+  --RECVisible: visible;
+  --RECEllipseVisible: visible;
+  --recEllipseBackgrColor: #ff0070;
+  --recEllipseShadow: 0px 0px 4px #ff0070;
+
+  --cornersBorder: 1px solid #ff0070;
+  
+  --headerTitleShadow: 4px 4px 0px #ff0070;
+  --footerTitleTextShadow: 2px 2px 0px #ff0070;
 }
