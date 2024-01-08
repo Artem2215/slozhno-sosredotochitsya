@@ -5,9 +5,9 @@
 :root {
   --mainFont: 'IBM Plex Mono';
   --mainFontSize: 1.125rem;
-  --lineHeight: 23.4px; 
   --normalFont: normal;
   --boldFont: bold;
+  
   --pageBackgrColor: #fff1f7;
 
   --btnTextColor: #353430;
@@ -18,6 +18,7 @@
   --subtitleBackgrColor: #ff8dcb;
   --textColor: #353430;
   --questionsTextColor: #353430;
+
   --linkShadow: 1.5px 1.5px 0px #ff8dcb;
   --linkBorderColor: 1px solid #353430;
 
@@ -25,7 +26,39 @@
   --RECEllipseVisible: hidden;
 
   --cornersBorder: 1px solid #353430;
-  
+
   --headerTitleShadow: 4px 4px 0px #ff0070;
   --footerTitleTextShadow: 2px 2px 0px #ff0070;
+}
+
+@media (prefers-color-sheme: light) {
+  :root {
+    --mainFont: 'IBM Plex Mono';
+    --mainFontSize: 1.125rem;
+    --lineHeight: 23.4px;
+    --normalFont: normal;
+    --boldFont: bold;
+
+    --pageBackgrColor: #fff1f7;
+
+    --btnTextColor: #353430;
+    --btnBorderColor: 1px solid #353430;
+
+    --titleTextColor: #ffc2e6;
+    --subtitleTextColor: #353430;
+    --subtitleBackgrColor: #ff8dcb;
+    --textColor: #353430;
+    --questionsTextColor: #353430;
+
+    --linkShadow: 1.5px 1.5px 0px #ff8dcb;
+    --linkBorderColor: 1px solid #353430;
+
+    --RECVisible: hidden;
+    --RECEllipseVisible: hidden;
+
+    --cornersBorder: 1px solid #353430;
+    
+    --headerTitleShadow: 4px 4px 0px #ff0070;
+    --footerTitleTextShadow: 2px 2px 0px #ff0070;
+  }
 }

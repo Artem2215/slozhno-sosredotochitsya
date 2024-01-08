@@ -10,6 +10,7 @@
   --lineHeight: 23.4px;
   --normalFont: normal;
   --boldFont: bold;
+  
   --pageBackgrColor: #000028;
 
   --btnTextColor: #ff0070;
@@ -20,13 +21,16 @@
   --subtitleBackgrColor: #ff0070;
   --textColor: #f1b2ce;
   --questionsTextColor: #000028;
+
   --linkShadow: 1.5px 1.5px 0px #ff0070;
   --linkBorderColor: 1px solid #f1b2ce;
+
   --RECTextColor: #ff0070;
   --ellipseColor: #ff0070;
 
   --RECVisible: visible;
   --RECEllipseVisible: visible;
+
   --recEllipseBackgrColor: #ff0070;
   --recEllipseShadow: 0px 0px 4px #ff0070;
 
