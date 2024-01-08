@@ -7,7 +7,7 @@
 .page.theme_dark {
   background-image: url('/images/cover-image-dark.png');
 
-  /* --mainFont: 'IBM Plex Mono'; */
+  --mainFont: 'IBM Plex Mono';
   --mainFontSize: 1.125rem;
   --normalFont: normal;
   --boldFont: bold;
