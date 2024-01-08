@@ -5,6 +5,7 @@
 :root {
   --mainFont: 'IBM Plex Mono';
   --mainFontSize: 1.125rem;
+  --lineHeight: 23.4px;
   --normalFont: normal;
   --boldFont: bold;
   --pageBackgrColor: #fff1f7;

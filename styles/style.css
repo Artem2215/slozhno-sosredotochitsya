@@ -1,45 +1,45 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: url('/images/cover-image-light.png');
+  margin: 0 auto;
   color: var(--textColor);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: var(--pageBackgrColor);
   font-family: var(--mainFont), sans-serif;
   font-size: var(--mainFontSize);
-  margin: 0 auto;
-  line-height: 23.4px;
+  line-height: var(--lineHeight);
+  background-color: var(--pageBackgrColor);
+  background-image: url('/images/cover-image-light.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header {
-  height: 100vh;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  margin: 0 auto;
   max-width: 1024px;
-  position: relative;
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .decorated-zone::before {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
   content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   width: 25px;
   height: 25px;
-  border-left: var(--cornersBorder);
   border-bottom: var(--cornersBorder);
+  border-left: var(--cornersBorder);
 }
 
 .decorated-zone::after {
+  content: '';
   position: absolute;
   top: 20px;
   right: 20px;
-  content: '';
   width: 25px;
   height: 25px;
   border-top: var(--cornersBorder);
@@ -50,42 +50,42 @@ header {
   display: flex;
   justify-content: center;
   gap: 10px;
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
 
 .header__theme-menu-button {
-  padding: 0px 13px;
-  font-weight: var(--normalFont);
   border: 0;
-  background-color: transparent;
-  text-transform: lowercase;
-  font-family: inherit;
-  font-size: inherit;
+  padding: 0px 13px;
   color: var(--btnTextColor);
+  font-family: inherit;
+  font-weight: var(--normalFont);
+  font-size: inherit;
+  text-transform: lowercase;
+  background-color: transparent;
 }
 
 .REC__text {
   position: absolute;
   top: 20px;
   right: 48px;
-  margin: 0;
-  text-transform: uppercase;
-  color: var(--RECTextColor);
   visibility: var(--RECVisible);
+  margin: 0;
+  color: var(--RECTextColor);
+  text-transform: uppercase;
 }
 
 .REC__text::after {
-  position: absolute;
   content: '';
+  position: absolute;
   top: 8px;
   left: 42px;
+  visibility: var(--RECEllipseVisible);
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: var(--recEllipseBackgrColor);
   box-shadow: var(--recEllipseShadow);
-  visibility: var(--RECEllipseVisible);
+  background-color: var(--recEllipseBackgrColor);
 }
 
 h1 {
@@ -93,19 +93,19 @@ h1 {
   align-self: center;
   margin: 0;
   color: var(--titleTextColor);
-  text-shadow: var(--headerTitleShadow);
-  font-size: clamp(7.25rem, 0.563rem + 14.45vw, 9.813rem);
   font-weight: var(--boldFont);
+  font-size: clamp(7.25rem, 0.563rem + 14.45vw, 9.813rem);
+  text-shadow: var(--headerTitleShadow);
 }
 
 .header__subtitle {
+  justify-self: end;
+  align-self: start;
   width: 47.95vw;
   margin-top: 50px;
   margin-right: 20px;
-  justify-self: end;
-  align-self: start;
-  font-weight: var(--boldFont);
   color: var(--subtitleTextColor);
+  font-weight: var(--boldFont);
   background-color: var(--subtitleBackgrColor);
 }
 
@@ -122,20 +122,20 @@ main {
 }
 
 .section__text-question {
-  width: 30.7617188vw;
-  font-weight: var(--boldFont);
-  color: var(--questionsTextColor);
   align-self: start;
+  width: 30.7617188vw;
   margin: 0;
+  color: var(--questionsTextColor);
+  font-weight: var(--boldFont);
 }
 
 .section__text-subtitle {
-  font-weight: var(--boldFont);
-  color: var(--subtitleTextColor);
-  background-color: var(--subtitleBackgrColor);
+  align-self: start;
   margin: 0;
   margin-bottom: 10px;
-  align-self: start;
+  color: var(--subtitleTextColor);
+  font-weight: var(--boldFont);
+  background-color: var(--subtitleBackgrColor);
 }
 
 .section__text {
@@ -144,8 +144,8 @@ main {
 }
 
 a {
-  text-decoration: none;
   color: var(--textColor);
+  text-decoration: none;
   text-shadow: var(--linkShadow);
 }
 
@@ -173,8 +173,8 @@ a {
   margin: 0;
   margin-bottom: 20px;
   color: var(--questionsTextColor);
-  background-color: var(--subtitleBackgrColor);
   font-weight: var(--boldFont);
+  background-color: var(--subtitleBackgrColor);
 }
 
 .section__howToConsentrationBetter-block .section__text-subtitle {
@@ -183,8 +183,8 @@ a {
 
 .section__picture-questtion {
   margin: 60px 20px 20px 20px;
-  font-weight: var(--boldFont);
   color: var(--questionsTextColor);
+  font-weight: var(--boldFont);
   background-color: var(--subtitleBackgrColor);
 }
 
@@ -192,10 +192,10 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 260px 315px 428px;
-  margin: 0 20px;
-  column-gap: 19.76px;
   grid-auto-flow: dense;
   row-gap: 21px;
+  column-gap: 19.76px;
+  margin: 0 20px;
 }
 
 .pictures img {
@@ -206,9 +206,9 @@ a {
 
 .imgSunset {
   grid-column: span 2;
-  height: 260px;
   justify-self: center;
   align-self: center;
+  height: 260px;
 }
 
 .imgIcecream {
@@ -228,10 +228,10 @@ a {
 }
 
 footer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   max-width: 1024px;
   height: 100vh;
   margin: 60px auto;
@@ -239,21 +239,21 @@ footer {
 }
 
 footer::before {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
   content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   width: 25px;
   height: 25px;
-  border-left: var(--cornersBorder);
   border-bottom: var(--cornersBorder);
+  border-left: var(--cornersBorder);
 }
 
 footer::after {
+  content: '';
   position: absolute;
   top: 20px;
   right: 20px;
-  content: '';
   width: 25px;
   height: 25px;
   border-top: var(--cornersBorder);
@@ -262,9 +262,9 @@ footer::after {
 
 .footer__title {
   color: var(--titleTextColor);
-  text-shadow: var(--footerTitleTextShadow);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: var(--boldFont);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  text-shadow: var(--footerTitleTextShadow);
 }
 
 /* Состояния кнопок */
@@ -335,8 +335,8 @@ a:focus {
   }
 
   .header::before {
-    left: 10px;
     bottom: 10px;
+    left: 10px;
   }
   
   .header::after {
@@ -383,15 +383,15 @@ a:focus {
   }
 
   .consentration {
-    margin: 48px 10px;
     row-gap: 0;
+    margin: 48px 10px;
   }
 
   .howToConsentrationBetter {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    margin: 30px 10px;
     row-gap: 0;
+    margin: 30px 10px;
   }
 
   .section__picture-questtion {
@@ -401,8 +401,8 @@ a:focus {
   .pictures {
     grid-template-columns: 1fr;
     grid-template-rows: 142px 355px 237px 355px 237px;
-    margin: 0 10px;
     row-gap: 10px;
+    margin: 0 10px;
   }
 
   .imgSunset {
@@ -432,8 +432,8 @@ a:focus {
   }
 
   footer::before {
-    left: 10px;
     bottom: 10px;
+    left: 10px;
   }
   
   footer::after {
