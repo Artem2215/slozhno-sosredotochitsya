@@ -390,8 +390,8 @@ a:focus {
   .howToConsentrationBetter {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    row-gap: 0;
     margin: 30px 10px;
+    row-gap: 0;
   }
 
   .section__picture-questtion {
