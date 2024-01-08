@@ -65,6 +65,10 @@ header {
   background-color: transparent;
 }
 
+.header__theme-menu-button_active:active {
+  pointer-events: none
+}
+
 .REC__text {
   position: absolute;
   top: 20px;

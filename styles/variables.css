@@ -3,28 +3,34 @@
   и их переопределение под различные устройства
 */
 :root {
+  background-image: url('/images/cover-image-dark.png');
+
   --mainFont: 'IBM Plex Mono';
   --mainFontSize: 1.125rem;
   --lineHeight: 23.4px;
   --normalFont: normal;
   --boldFont: bold;
-  --pageBackgrColor: #fff1f7;
+  --pageBackgrColor: #000028;
 
-  --btnTextColor: #353430;
-  --btnBorderColor: 1px solid #353430;
+  --btnTextColor: #ff0070;
+  --btnBorderColor: 1px solid #ff0070;
 
-  --titleTextColor: #ffc2e6;
-  --subtitleTextColor: #353430;
-  --subtitleBackgrColor: #ff8dcb;
-  --textColor: #353430;
-  --questionsTextColor: #353430;
-  --linkShadow: 1.5px 1.5px 0px #ff8dcb;
-  --linkBorderColor: 1px solid #353430;
+  --titleTextColor: #db00ff;
+  --subtitleTextColor: #000028;
+  --subtitleBackgrColor: #ff0070;
+  --textColor: #f1b2ce;
+  --questionsTextColor: #000028;
+  --linkShadow: 1.5px 1.5px 0px #ff0070;
+  --linkBorderColor: 1px solid #f1b2ce;
+  --RECTextColor: #ff0070;
+  --ellipseColor: #ff0070;
 
-  --RECVisible: hidden;
-  --RECEllipseVisible: hidden;
+  --RECVisible: visible;
+  --RECEllipseVisible: visible;
+  --recEllipseBackgrColor: #ff0070;
+  --recEllipseShadow: 0px 0px 4px #ff0070;
 
-  --cornersBorder: 1px solid #353430;
+  --cornersBorder: 1px solid #ff0070;
   
   --headerTitleShadow: 4px 4px 0px #ff0070;
   --footerTitleTextShadow: 2px 2px 0px #ff0070;
