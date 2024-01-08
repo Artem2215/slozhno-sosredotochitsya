@@ -109,10 +109,9 @@ h1 {
   background-color: var(--subtitleBackgrColor);
 }
 
-main {
+.main {
   max-width: 1024px;
   margin: 0 auto; 
-
 }
 
 .section__block {
