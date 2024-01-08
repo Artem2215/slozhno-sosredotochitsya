@@ -5,8 +5,6 @@
 */
 
 .page.theme_dark {
-  background-image: url('/images/cover-image-dark.png');
-
   --mainFont: 'IBM Plex Mono';
   --mainFontSize: 1.125rem;
   --lineHeight: 23.4px;
@@ -36,4 +34,42 @@
   
   --headerTitleShadow: 4px 4px 0px #ff0070;
   --footerTitleTextShadow: 2px 2px 0px #ff0070;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mainFont: 'IBM Plex Mono';
+    --mainFontSize: 1.125rem;
+    --lineHeight: 23.4px;
+    --normalFont: normal;
+    --boldFont: bold;
+    --pageBackgrColor: #000028;
+
+    --btnTextColor: #ff0070;
+    --btnBorderColor: 1px solid #ff0070;
+
+    --titleTextColor: #db00ff;
+    --subtitleTextColor: #000028;
+    --subtitleBackgrColor: #ff0070;
+    --textColor: #f1b2ce;
+    --questionsTextColor: #000028;
+    --linkShadow: 1.5px 1.5px 0px #ff0070;
+    --linkBorderColor: 1px solid #f1b2ce;
+    --RECTextColor: #ff0070;
+    --ellipseColor: #ff0070;
+
+    --RECVisible: visible;
+    --RECEllipseVisible: visible;
+    --recEllipseBackgrColor: #ff0070;
+    --recEllipseShadow: 0px 0px 4px #ff0070;
+
+    --cornersBorder: 1px solid #ff0070;
+    
+    --headerTitleShadow: 4px 4px 0px #ff0070;
+    --footerTitleTextShadow: 2px 2px 0px #ff0070;
+  }
+
+  .page {
+    background-image: url('/images/cover-image-dark.png');
+  }
 }
