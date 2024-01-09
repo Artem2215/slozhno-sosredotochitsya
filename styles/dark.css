@@ -5,6 +5,8 @@
 */
 
 .page.theme_dark {
+  background-image: url('/images/cover-image-dark.png');
+
   --mainFont: 'IBM Plex Mono';
   --mainFontSize: 1.125rem;
   --lineHeight: 23.4px;
@@ -42,6 +44,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    background-image: url('/images/cover-image-dark.png');
+
     --mainFont: 'IBM Plex Mono';
     --mainFontSize: 1.125rem;
     --lineHeight: 23.4px;
