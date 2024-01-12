@@ -260,12 +260,10 @@ a {
   max-inline-size: 1024px;
   min-block-size: 668px;
   block-size: 100vh;
-  margin: 60px auto;
   margin-block-start: 60px;
-  margin-block-end: 60px;
+  margin-block-end: 0;
   margin-inline-start: auto;
   margin-inline-end: auto;
-  margin-block-end: 0;
 }
 
 .footer__title {
@@ -358,6 +356,16 @@ a:focus-visible {
 }
 
 @media ( 375px <= width < 768px ) {
+
+  .header__theme-menu {
+    margin-inline-end: 20px;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-block-start: 192px;
+  }
 
   .section__text-question {
     max-inline-size: 100%;
@@ -510,10 +518,8 @@ a:focus-visible {
 
   .footer {
     margin-block-start: 40px;
-    margin-block-end: 40px;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
     margin-block-end: 0;
+    margin-inline: auto;
   }
 
   .decorated-zone::before {
