@@ -112,11 +112,6 @@
   font-weight: var(--boldFont);
 }
 
-.section__text-subtitle {
-  font-size: 18px;
-  margin: 0;
-}
-
 .header__subtitle {
   justify-self: end;
   align-self: start;
@@ -147,6 +142,8 @@
 
 .section__text-subtitle {
   align-self: start;
+  font-size: 18px;
+  margin: 0;
   margin-block-end: 10px;
   color: var(--subtitleTextColor);
   font-weight: var(--boldFont);
