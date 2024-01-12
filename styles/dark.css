@@ -4,7 +4,7 @@
   переключая тему
 */
 
-.page.theme_dark {
+:root .theme_dark {
   background-image: url('/images/cover-image-dark.png');
 
   --mainFont: 'IBM Plex Mono';
@@ -16,65 +16,71 @@
   --pageBackgrColor: #000028;
 
   --btnTextColor: #ff0070;
-  --btnBorderColor: 1px solid #ff0070;
+  --btnBorderColor: #ff0070;
+  --btnHoverBorderColor: 255, 0, 112;
+  --activeBtnBorderColor: #ff0070;
 
   --titleTextColor: #db00ff;
   --subtitleTextColor: #000028;
   --subtitleBackgrColor: #ff0070;
   --textColor: #f1b2ce;
-  --questionsTextColor: #000028;
+  --questionsTextColor: #ff0070;
+  --advicesTextColor: #000028;
+  --picturesTextColor: #000028;
 
-  --linkShadow: 1.5px 1.5px 0px #ff0070;
-  --linkBorderColor: 1px solid #f1b2ce;
+  --linkShadow: #ff0070;
+  --linkBorderColor: #f1b2ce;
 
   --RECTextColor: #ff0070;
   --ellipseColor: #ff0070;
-
   --RECVisible: visible;
   --RECEllipseVisible: visible;
-
   --recEllipseBackgrColor: #ff0070;
-  --recEllipseShadow: 0px 0px 4px #ff0070;
+  --recEllipseShadowColor: #ff0070;
 
-  --cornersBorder: 1px solid #ff0070;
+  --cornersBorderColor: #ff0070;
   
-  --headerTitleShadow: 4px 4px 0px #ff0070;
-  --footerTitleTextShadow: 2px 2px 0px #ff0070;
+  --headerTitleShadow: #ff0070;
+  --footerTitleTextShadow: #ff0070;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    background-image: url('/images/cover-image-dark.png');
-
     --mainFont: 'IBM Plex Mono';
     --mainFontSize: 1.125rem;
     --lineHeight: 23.4px;
     --normalFont: normal;
     --boldFont: bold;
+    
     --pageBackgrColor: #000028;
 
     --btnTextColor: #ff0070;
-    --btnBorderColor: 1px solid #ff0070;
+    --btnBorderColor: #ff0070;
+    --btnHoverBorderColor: 255, 0, 112;
+    --activeBtnBorderColor: #ff0070;
 
     --titleTextColor: #db00ff;
     --subtitleTextColor: #000028;
     --subtitleBackgrColor: #ff0070;
     --textColor: #f1b2ce;
-    --questionsTextColor: #000028;
-    --linkShadow: 1.5px 1.5px 0px #ff0070;
-    --linkBorderColor: 1px solid #f1b2ce;
+    --questionsTextColor: #ff0070;
+    --advicesTextColor: #000028;
+    --picturesTextColor: #000028;
+
+    --linkShadow: #ff0070;
+    --linkBorderColor: #f1b2ce;
+
     --RECTextColor: #ff0070;
     --ellipseColor: #ff0070;
-
     --RECVisible: visible;
     --RECEllipseVisible: visible;
     --recEllipseBackgrColor: #ff0070;
-    --recEllipseShadow: 0px 0px 4px #ff0070;
+    --recEllipseShadowColor: #ff0070;
 
-    --cornersBorder: 1px solid #ff0070;
+    --cornersBorderColor: #ff0070;
     
-    --headerTitleShadow: 4px 4px 0px #ff0070;
-    --footerTitleTextShadow: 2px 2px 0px #ff0070;
+    --headerTitleShadow: #ff0070;
+    --footerTitleTextShadow: #ff0070;
   }
 
   .page {
